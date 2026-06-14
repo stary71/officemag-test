@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description"
+    content="Тестовое задание на должность Веб-технолог/Frontend-разработчик в компанию ОФИСМАГ" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <!-- Preconnect для улучшения загрузки внешних ресурсов -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@100;400;700&family=Merriweather:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Carlito:wght@100;400;700&display=swap" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> -->
+
+  <title>Тестовое задание Frontend</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.officemag.ru/favicon.ico" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__content">
+      <hgroup>
+        <h1>Тестовое задание Frontend</h1>
+        <p>
+          Соискатель
+          <a class="nav__link" href="https://hh.ru/resume/7c4e6de3ff07d7c2230039ed1f515676377575" target="_blank">
+            Андрей Глебов
+          </a>
+        </p>
+      </hgroup>
+      <nav class="nav">
+        <button class="nav__toggle" aria-label="Меню" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav__list">
+          <li><a href="#text" class="nav__link">Текст</a></li>
+          <li><a href="#form" class="nav__link">Форма</a></li>
+          <li><a href="#buttons" class="nav__link">Кнопки</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section id="text">
+      <div class="container">
+        <h2>Текст</h2>
+        <blockquote class="quote" cite="https://ru.wikiquote.org/wiki/Быть_или_не_быть">
+          <pre>
+Быть иль не&nbsp;быть&nbsp;&mdash; вот в&nbsp;чем вопрос.
+Что благороднее: сносить удары
+Неистовой судьбы&nbsp;&mdash; иль против моря
+Невзгод вооружиться, в&nbsp;бой вступить
+И&nbsp;всё покончить разом... Умереть...</pre>
+          <footer>
+            Уильям Шекспир,
+            <cite>&laquo;Гамлет&raquo;</cite>
+            Перевод П.&nbsp;Гнедича
+          </footer>
+        </blockquote>
+        <p class="dropcap">
+          Простой текст в&nbsp;несколько абзацев. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do&nbsp;eiusmod tempor incididunt
+          ut&nbsp;labore et&nbsp;dolore magna aliqua. Ut&nbsp;enim
+          ad&nbsp;minim veniam, quis nostrud exercitation ullamco laboris nisi
+          ut&nbsp;aliquip ex&nbsp;ea&nbsp;commodo consequat. Duis aute irure
+          dolor in&nbsp;reprehenderit in&nbsp;voluptate velit esse cillum
+          dolore eu&nbsp;fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in&nbsp;culpa qui officia deserunt
+          mollit anim id&nbsp;est laborum.
+        </p>
+        <p class="dropcap">
+          Можно попробовать применить разные способы выделять текст
+          и&nbsp;снабжать фрагменты дополнительным инлайновым форматированием: <em>курсив</em>,
+          <strong>полужирный</strong>, <ins><span>подчеркнутый</span></ins> или
+          <del><span>зачеркнутый</span></del>. В&nbsp;большинстве случаев имеет смысл только использование
+          семантических тегов: <code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code>
+          &nbsp;и&nbsp;т.&nbsp;д. &mdash;&nbsp;кроме случаев, когда целевое
+          устройство или программа не&nbsp;поддерживает современные теги
+          (например, в&nbsp; <abbr title="HyperText Markup Language">HTML</abbr>-шаблонах писем). А вот, к примеру,
+          <span class="weird">
+            полужирный зачеркнутый и&nbsp;подчеркнутый курсив капсом
+          </span>. Тут уже не до семантики, конечно. Можно использовать подстрочный и&nbsp;надстрочный текст:
+          H<sub><small>2</small></sub>O, CO<sub><small>2</small></sub>,
+          <span class="spin">E&#8239;=&#8239;mc <sup><small>2</small></sup></span>.
+        </p>
+        <p class="dropcap multi-column">
+          Текст в&nbsp;несколько колонок. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do&nbsp;eiusmod tempor incididunt
+          ut&nbsp;labore et&nbsp;dolore magna aliqua. Ut&nbsp;enim
+          ad&nbsp;minim veniam, quis nostrud exercitation ullamco laboris nisi
+          ut&nbsp;aliquip ex&nbsp;ea&nbsp;commodo consequat. Duis aute irure
+          dolor in&nbsp;reprehenderit in&nbsp;voluptate velit esse cillum
+          dolore eu&nbsp;fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in&nbsp;culpa qui officia deserunt
+          mollit anim id&nbsp;est laborum.
+        </p>
+        <div class="lists">
+          <ul class="lists__list">
+            <li>Покормить кота</li>
+            <li>
+              Сказать доброе слово... И&nbsp;даже много длинных
+              и&nbsp;красивых добрых слов, чтобы они не&nbsp;помещались
+              в&nbsp;одну строку, а&nbsp;отображались правильно сверстанные
+              через типограф
+            </li>
+            <li>
+              Помочь соседу преодолеть боязнь замкнутого пространства,
+              агарофобию и&nbsp;изучить JavaScript
+            </li>
+          </ul>
+
+          <table class="lists__table">
+            <caption>
+              Для табличных данных используем таблицы.
+              <br />
+              Финансовые показатели филиалов (тыс.&nbsp;₽)
+            </caption>
+            <thead>
+              <tr>
+                <th rowspan="2">Филиал</th>
+                <th rowspan="2">Менеджер</th>
+                <th colspan="3">2023 год</th>
+                <th colspan="2">2024 год</th>
+              </tr>
+              <tr>
+                <th>Кв.1</th>
+                <th>Кв.2</th>
+                <th>Кв.3</th>
+                <th>Кв.1</th>
+                <th>Кв.2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th rowspan="2">Северный</th>
+                <td>Иванов А.</td>
+                <td>450</td>
+                <td class="highlight">580</td>
+                <td>620</td>
+                <td>710</td>
+                <td>695</td>
+              </tr>
+              <tr>
+                <td>Петров Б.</td>
+                <td>380</td>
+                <td>420</td>
+                <td>490</td>
+                <td>530</td>
+                <td>560</td>
+              </tr>
+              <tr>
+                <th>Южный</th>
+                <td>Сидоров В.</td>
+                <td>620</td>
+                <td>680</td>
+                <td>740</td>
+                <td>810</td>
+                <td class="highlight">890</td>
+              </tr>
+              <tr>
+                <th rowspan="2">Западный</th>
+                <td>Козлова М.</td>
+                <td>510</td>
+                <td>540</td>
+                <td>580</td>
+                <td>630</td>
+                <td>670</td>
+              </tr>
+              <tr>
+                <td>Новиков Д.</td>
+                <td>490</td>
+                <td>520</td>
+                <td>560</td>
+                <td>600</td>
+                <td>640</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2">Итого по&nbsp;всем филиалам:</td>
+                <td>2450</td>
+                <td>2740</td>
+                <td>2990</td>
+                <td>3280</td>
+                <td>3455</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="form">
+      <div class="container">
+        <h2>Форма</h2>
+        <div class="with_comment">
+          <form id="myForm" class="form">
+            <img id="form__img" src="form.png" alt="Макет для проверки" width="766" height="654" />
+            <div class="form__caption">
+              <h3 class="form__caption--title">Заполните поля</h3>
+              <strong>ну пожалуйста</strong>
+            </div>
+            <div class="form__section form__section--outer-shadow">
+              <h4 class="form__section--caption">Основное</h4>
+              <div class="form__field">
+                <label class="form__field--lbl" for="name">Имя</label>
+                <input class="form__field__input--txt" name="name" id="name" type="text" placeholder="по паспорту" />
+              </div>
+              <div class="form__field--center">
+                <label class="form__field--lbl" for="moodColor">
+                  Цвет вашего настроения
+                </label>
+                <input class="form__field__input--color" name="moodColor" id="moodColor" type="color" value="#0000ff" />
+              </div>
+              <div class="form__section--inner form__section--shadow">
+                <h4 class="form__section--caption">Дополнительное</h4>
+                <div class="form__field">
+                  <label class="form__field--lbl" for="comment">
+                    Комментарий
+                  </label>
+                  <textarea class="form__field__input--txt" name="comment" id="comment" type="color"
+                    placeholder="Напишите хоть что-нибудь. &#10;Если хотите, конечно."></textarea>
+                </div>
+              </div>
+              <div class="form__field form__field--radio">
+                <input name="justRadio" id="justRadio" type="radio" />
+                <label class="form__field--lbl" for="justRadio">
+                  Ну&nbsp;а&nbsp;тут просто полежит радиобатон
+                </label>
+              </div>
+              <div class="form__field form__field--checkbox">
+                <input name="agreement" id="agreement" type="checkbox" />
+                <label class="form__field--lbl" for="agreement">
+                  <span>
+                    Соглашаюсь на&nbsp;всё, что&nbsp;бы вы ни придумали,
+                    и&nbsp;осознаю, что это может означать
+                    <a class="form--link" href="#" onclick="event.preventDefault(); alert('To be done soon');">что
+                      угодно</a>
+                  </span>
+                </label>
+              </div>
+              <button class="form__section--submit" type="submit">
+                Отправить все мои данные
+              </button>
+            </div>
+          </form>
+          <div class="comments">
+            <p>
+              <button id="form__img_toggler">Показать макет</button>
+              <button id="form__img_transparency">Непрозрачность</button>
+            </p>
+            <p class="comments__comment">
+              Форма ничего не&nbsp;отправляет, и&nbsp;не&nbsp;валидируется
+              (не&nbsp;ставилась такая задача), но&nbsp;при необходимости это
+              надо реализовать через JavaScript. Пока что в&nbsp;alert-е можно
+              проверить введенные данные.
+            </p>
+            <p class="comments__comment">
+              Я&nbsp;понимаю бессмыссленность одинокой радиокнопки
+              и&nbsp;в&nbsp;реальном проекте всячески оспаривал&nbsp;бы такое
+              решение, но&nbsp;в&nbsp;данном случае &laquo;хозяин&nbsp;&mdash;
+              барин&raquo;. Если хотите ее&nbsp;выключить: <a href="#" id="justRadioCtrl">кликните сюда</a>.
+            </p>
+            <p class="comments__comment">
+              Грамматические ошибки, типа &laquo;не&nbsp;придумали&raquo;,
+              я&nbsp;все&nbsp;же решил исправить на&nbsp;случай, если это
+              часть теста.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="buttons">
+      <div class="container">
+        <h2>Кнопки</h2>
+        <div class="with_comment">
+          <div class="buttons">
+            <button type="button" class="buttons__button">Просмотреть</button>
+            <button type="button" class="buttons__button buttons__button--bordered buttons__button--danger">
+              Просмотреть
+            </button>
+            <button type="button" class="buttons__button buttons__button--flat buttons__button--danger">
+              Просмотреть
+            </button>
+            <button type="button" class="buttons__button buttons__button--arrowed buttons__button--arrowed--red">
+              Просмотреть
+            </button>
+            <button type="button" class="buttons__button buttons__button--flat buttons__button--ok">
+              Просмотреть
+            </button>
+            <button type="button" class="buttons__button buttons__button--bordered buttons__button--ok">
+              Просмотреть
+            </button>
+            <button type="button" class="buttons__button" disabled aria-disabled="true">
+              Просмотреть
+            </button>
+            <button type="button" class="buttons__button buttons__button--bordered buttons__button--danger" disabled
+              aria-disabled="true">
+              Просмотреть
+            </button>
+            <button type="button" class="buttons__button buttons__button--flat buttons__button--danger" disabled
+              aria-disabled="true">
+              Просмотреть
+            </button>
+            <button type="button" class="buttons__button buttons__button--arrowed buttons__button--arrowed--red"
+              disabled aria-disabled="true">
+              Просмотреть
+            </button>
+            <button type="button" class="buttons__button buttons__button--flat buttons__button--ok" disabled
+              aria-disabled="true">
+              Просмотреть
+            </button>
+            <button type="button" class="buttons__button buttons__button--bordered buttons__button--ok" disabled
+              aria-disabled="true">
+              Просмотреть
+            </button>
+            <button type="button" class="buttons__button buttons__button__icon buttons__button__icon--pencil">
+              Редактировать
+            </button>
+            <button type="button" class="buttons__button buttons__button__icon buttons__button__icon--download">
+              Выгрузить в Excel
+            </button>
+            <button type="button" class="buttons__button buttons__button__icon buttons__button__icon--delete">
+              Удалить список
+            </button>
+            <button type="button" class="buttons__button buttons__button__icon buttons__button__icon--print">
+              Распечатать
+            </button>
+            <button type="button" class="buttons__button buttons__button__icon buttons__button__icon--upload">
+              Загрузить из файла
+            </button>
+            <button type="button"
+              class="buttons__button buttons__button--arrowed buttons__button__icon buttons__button--flat buttons__button--ok buttons__button__icon--pencil">
+              Кастомная кнопка
+            </button>
+            <button type="button"
+              class="buttons__button buttons__button__icon buttons__button__icon--delete buttons__button--flat buttons__button--danger"
+              style="flex-grow: 1">
+              Кнопка с кастомным стилем
+            </button>
+          </div>
+          <div class="comments">
+            <p class="comments__comment">
+              Наводите мышь и&nbsp;кликайте по&nbsp;кнопкам для проверки
+              состояний
+            </p>
+            <p class="comments__comment">
+              Разумеется, при использовании фреймворка или библиотеки типа
+              ReactJS, можно упростить код до&nbsp;коротких опциональных
+              атрибутов кастомного компонента и&nbsp;избавиться от&nbsp;
+              <abbr title="Блок Элемент Модификатор">БЭМ</abbr>
+              нотации.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>&copy; 2026</small>
+    </div>
+  </footer>
+
+  <script>
+    const formImgCtrlBtn = document.getElementById("form__img_toggler");
+    const formImgTransparencyBtn = document.getElementById(
+      "form__img_transparency",
+    );
+    const formImg = document.getElementById("form__img");
+    let isActive = false;
+    let isTransparent = true;
+
+    formImgCtrlBtn.addEventListener("click", () => {
+      isActive = !isActive;
+
+      if (isActive) {
+        formImgCtrlBtn.textContent = "Убрать макет";
+        formImgTransparencyBtn.style.display = "inline";
+        formImgTransparencyBtn.textContent = isTransparent
+          ? "Непрозрачность"
+          : "Прозрачность";
+        formImg.classList.add("active");
+      } else {
+        formImgCtrlBtn.textContent = "Показать макет";
+        formImgTransparencyBtn.style.display = "none";
+        formImg.classList.remove("active");
+      }
+    });
+
+    formImgTransparencyBtn.addEventListener("click", () => {
+      isTransparent = !isTransparent;
+
+      if (isTransparent) {
+        formImgTransparencyBtn.textContent = "Непрозрачность";
+        formImg.classList.remove("opaque");
+      } else {
+        formImgTransparencyBtn.textContent = "Прозрачность";
+        formImg.classList.add("opaque");
+      }
+    });
+
+    const radioButton = document.getElementById('justRadio');
+    const justRadioCtrl = document.getElementById("justRadioCtrl");
+    justRadioCtrl.addEventListener("click", function (e) {
+      if (radioButton && radioButton.type === "radio") {
+        e.preventDefault();
+        radioButton.checked = false;
+      }
+    });
+
+    document
+      .getElementById("myForm")
+      .addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(this);
+        const values = [];
+
+        for (let [key, value] of formData.entries()) {
+          values.push(`${key}: ${value}`);
+        }
+
+        alert("Значения полей формы:\n\n" + values.join("\n"));
+      });
+  </script>
+</body>
+
+</html>
