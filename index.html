@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="description"
     content="Тестовое задание на должность Веб-технолог/Frontend-разработчик в компанию ОФИСМАГ" />
-  <meta name="theme-color" content="#ffffff" />
 
-  <!-- Preconnect для улучшения загрузки внешних ресурсов -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -48,7 +46,9 @@
           <li><a href="#form" class="nav__link">Форма</a></li>
           <li><a href="#buttons" class="nav__link">Кнопки</a></li>
           <li><a href="#scheme" class="nav__link">Схема</a></li>
+          <li><a href="#showroom" class="nav__link">Витрина</a></li>
           <li><a href="./black-page/index.html" class="nav__link" target="_blank">Черная страница</a></li>
+          <li><a href="#beauty" class="nav__link">Красота</a></li>
         </ul>
       </nav>
     </div>
@@ -414,19 +414,19 @@
                 <div class="scheme__item scheme__item--lvl3 scheme__item--arrow-r">Ольга Боргдорф</div>
               </div>
               <div class="div19 scheme--left-right scheme--down-r"> </div>
-              <div class="div20 scheme--down-r scheme--left-r">
+              <div class="div20 scheme--down-r-r scheme--left-r">
                 <div class="scheme__item scheme__item--lvl4 scheme__item--arrow-r">Дмитрий Возингуй</div>
               </div>
               <div class="div21 scheme--up-down"> </div>
               <div class="div22 scheme--up-down"> </div>
               <div class="div23 scheme--right-r scheme--up-down-r"> </div>
-              <div class="div24 scheme--up-down-r">
+              <div class="div24 scheme--up-down-r-r">
                 <div class="scheme__item scheme__item--lvl4">Кристина Болтушкина</div>
               </div>
               <div class="div25 scheme--up-down"> </div>
               <div class="div26 scheme--up-down"> </div>
               <div class="div27 scheme--right-r scheme--up-r"> </div>
-              <div class="div28 scheme--up-r scheme--left-r">
+              <div class="div28 scheme--up-r-r scheme--left-r">
                 <div class="scheme__item scheme__item--lvl4">Максим Висюлькин</div>
               </div>
               <div class="div29 scheme--up-down"> </div>
@@ -454,6 +454,61 @@
               всего&nbsp;&mdash; в&nbsp;<abbr title="Scalable Vector Graphics">SVG</abbr>), но&nbsp;я&nbsp;догадываюсь,
               что из&nbsp;моих скиллов интересует
               не&nbsp;это...
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="showroom">
+      <div class="container">
+        <h2>Витрина</h2>
+        <div class="with_comment">
+          <div class="comments">
+            <p class="comments__comment">
+              Не&nbsp;успел сделать, и&nbsp;не&nbsp;до&nbsp;конца понял задачу: полупрозрачное изображение очередного
+              блока должно выглядеть именно так? То&nbsp;есть&nbsp;&mdash; часть контента находится за&nbsp;пределами
+              основного блока
+              со&nbsp;скроллингом? Пока не представляю как это сделать без использования JavaScript. Думаю, вряд&nbsp;ли
+              это возможно, но&nbsp;надо
+              погуглить, конечно. Если&nbsp;же вы&nbsp;просто хотите кастомный горизонтальный скроллбар, то&nbsp;это
+              делается через
+              CSS свойства <code>scrollbar-width</code>, <code>scrollbar-color</code>, <code>-webkit-scrollbar</code>,
+              <code>-webkit-scrollbar-track</code>, <code>-webkit-scrollbar-thumb</code>. Работать будет не&nbsp;везде
+              одинаково, но&nbsp;в&nbsp;большинстве случаев&nbsp;&mdash; приемлемо.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="beauty">
+      <div class="container">
+        <h2>Красота</h2>
+        <div class="with_comment">
+          <div class="comments">
+            <p class="comments__comment">
+              Тоже не&nbsp;готово. С&nbsp;обычной кнопкой проблем не&nbsp;вижу, а&nbsp;вот с&nbsp;кастомным
+              чекбоксом&nbsp;&mdash; ну&nbsp;пять баллов за
+              фантазию, конечно. Пока разглядывал, увидел там и&nbsp;непростые тени, и&nbsp;блики, и&nbsp;отражения
+              неправильной
+              формы, и&nbsp;цветные рефлексы на&nbsp;окружающих деталях. Самое простое и&nbsp;красивое решение, которое
+              пришло в
+              голову, такое: распотрошить ваш gif на&nbsp;кадры, аккуратно вырезать и&nbsp;выкинуть лишний фон,
+              кадры&nbsp;же
+              использовать для спрайтовой CSS-анимации с&nbsp;keyframes. Должно работать даже без JavaScript
+              и&nbsp;на&nbsp;любом
+              фоне.
+              Масштабировать тоже можно
+              будет до&nbsp;приемлемых размеров. Тень добавить&nbsp;&mdash; уже через CSS. И&nbsp;даже по&nbsp;общему
+              объему
+              вряд&nbsp;ли будет
+              сильно много, а&nbsp;то, что будет отъедать меньше ресурсов, чем векторные анимашки&nbsp;&mdash;
+              наверняка. Если дадите
+              еще времени&nbsp;&mdash; смогу показать через денек.
+              Если&nbsp;же перерисовывать в&nbsp;векторе, а&nbsp;потом еще и&nbsp;анимировать красиво&nbsp;&mdash;
+              ну&nbsp;это работа для художников,
+              наверное.
             </p>
           </div>
         </div>

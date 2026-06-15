@@ -17,7 +17,7 @@ body {
   );
   --even-bg: #f0f0f0;
   --odd-bg: #d8e5e7;
-  height: 100%;
+  min-height: 100%;
 }
 
 *,
@@ -39,6 +39,8 @@ body {
   flex-direction: column;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
 }
 
 input,
@@ -68,6 +70,10 @@ h3 {
   color: var(--text-secondary);
   font-family: var(--title-font);
   font-weight: 700;
+}
+
+h2 {
+  margin-top: 1em;
 }
 
 p,
@@ -140,7 +146,7 @@ li {
 
 .nav__list {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   list-style: none;
 }
 
@@ -148,6 +154,8 @@ li {
   color: var(--text-primary);
   text-decoration: underline;
   transition: var(--transition);
+  font-size: 0.9em;
+  white-space: nowrap;
 }
 
 .nav__link:hover,
@@ -924,10 +932,16 @@ textarea.form__field__input--txt::placeholder {
   --font: "Open Sans", Arial, Helvetica, sans-serif;
   --line-color: #a8a8a8;
   --arrow-color: #efefef;
-  min-width: 900px;
+  --name-block-width: 200px;
+  min-width: 860px;
   background-color: #2d333b;
   padding: 20px;
   margin-top: 1em;
+}
+
+#scheme .with_comment {
+  flex-direction: column-reverse;
+  gap: 0;
 }
 
 .scheme__grid {
@@ -959,8 +973,8 @@ textarea.form__field__input--txt::placeholder {
   font-size: 0.94em;
   padding: 0.5em 1.2em;
   text-align: center;
-  width: 200px;
-  min-width: 200px;
+  width: var(--name-block-width);
+  min-width: var(--name-block-width);
   position: relative;
   margin-block: 10px;
   z-index: 10;
@@ -993,10 +1007,14 @@ textarea.form__field__input--txt::placeholder {
 .scheme--down::before,
 .scheme--down-r::after,
 .scheme--down-r::before,
+.scheme--down-r-r::after,
+.scheme--down-r-r::before,
 .scheme--up::after,
 .scheme--up::before,
 .scheme--up-r::after,
 .scheme--up-r::before,
+.scheme--up-r-r::after,
+.scheme--up-r-r::before,
 .scheme--right::after,
 .scheme--right::before,
 .scheme--right-r::after,
@@ -1008,14 +1026,17 @@ textarea.form__field__input--txt::placeholder {
 .scheme--up-down::after,
 .scheme--up-down::before,
 .scheme--up-down-r::after,
-.scheme--up-down-r::before {
+.scheme--up-down-r::before,
+.scheme--up-down-r-r::after,
+.scheme--up-down-r-r::before {
   content: "";
   background-color: var(--line-color);
   position: absolute;
 }
 
 .scheme--down::before,
-.scheme--down-r::before {
+.scheme--down-r::before,
+.scheme--down-r-r::before {
   width: 1px;
   height: 50%;
   bottom: 0;
@@ -1023,7 +1044,8 @@ textarea.form__field__input--txt::placeholder {
 }
 
 .scheme--up::before,
-.scheme--up-r::before {
+.scheme--up-r::before,
+.scheme--up-r-r::before {
   width: 1px;
   height: 50%;
   top: 0;
@@ -1031,14 +1053,26 @@ textarea.form__field__input--txt::placeholder {
 }
 
 .scheme--down-r::before,
-.scheme--up-r::before {
+.scheme--down-r-r::before,
+.scheme--up-r::before,
+.scheme--up-r-r::before {
+  bottom: 0;
+  left: auto;
+  right: 20px;
+}
+
+.scheme--down-r::before,
+.scheme--down-r-r::before,
+.scheme--up-r::before,
+.scheme--up-r-r::before {
   bottom: 0;
   left: auto;
   right: 20px;
 }
 
 .scheme--up-down::before,
-.scheme--up-down-r::before {
+.scheme--up-down-r::before,
+.scheme--up-down-r-r::before {
   width: 1px;
   height: 100%;
   top: 0;
@@ -1048,6 +1082,14 @@ textarea.form__field__input--txt::placeholder {
 .scheme--up-down-r::before {
   left: auto;
   right: 20px;
+}
+
+.scheme--up-down-r-r::before,
+.scheme--up-r-r::before,
+.scheme--down-r-r::before,
+.scheme--up-down-r-r::before {
+  left: auto;
+  right: calc(100% - var(--name-block-width) - 20px);
 }
 
 .scheme--right::after,
@@ -1067,8 +1109,10 @@ textarea.form__field__input--txt::placeholder {
 
 .scheme--left-r::after {
   top: 50%;
+  /* left: auto;
+  right: 20px; */
   left: auto;
-  right: 20px;
+  right: calc(100% - var(--name-block-width) - 20px);
 }
 
 .scheme--left-right::after {
@@ -1192,5 +1236,39 @@ textarea.form__field__input--txt::placeholder {
   }
   .div38 {
     grid-area: 10 / 4 / 11 / 8;
+  }
+}
+
+#showroom code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1em;
+  font-style: normal;
+  color: gray;
+}
+
+@media (max-width: 992px) {
+  .with_comment {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+
+  .multi-column {
+    column-count: 2;
+  }
+
+  .lists {
+    flex-direction: column;
+  }
+
+  .lists__list, .lists__table {
+    max-width: 96%;
+  }
+
+  .header__content {
+    flex-direction: column;
+  }
+
+  section {
+    scroll-margin-top: 200px;
   }
 }
