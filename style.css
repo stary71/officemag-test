@@ -433,7 +433,7 @@ strong {
     rgba(255, 255, 255, 0.9) 0,
     rgba(255, 255, 255, 0.72) 100%
   );
-  padding: 16px 16px 25px 16px;
+  padding: 15px 16px 25px 16px;
   min-width: 650px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
 }
@@ -450,7 +450,7 @@ strong {
   font-weight: 500;
   font-size: 1.45em;
   letter-spacing: -0.02em;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
   text-shadow: 0 1px 0 white;
 }
 
@@ -462,7 +462,7 @@ strong {
     rgba(255, 248, 185, 1) 100%
   );
   margin-inline: -16px;
-  margin-block: 8px 20px;
+  margin-block: 9px 21px;
   padding: 10px 16px 9px;
   border-top: white 1px solid;
 }
@@ -481,7 +481,7 @@ strong {
 .form__field--center {
   display: flex;
   align-items: baseline;
-  margin-bottom: 12px;
+  margin-bottom: 11px;
 }
 
 .form__field--center {
@@ -511,6 +511,7 @@ strong {
   padding: 4px 4px;
   height: 31px;
   width: 52px;
+  margin-top: 1px;
 }
 
 textarea.form__field__input--txt {
@@ -621,7 +622,7 @@ textarea.form__field__input--txt::placeholder {
   cursor: pointer;
   transition: all 0.1s;
   padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 1px;
 }
 
 .form__section--submit:hover {
@@ -632,7 +633,7 @@ textarea.form__field__input--txt::placeholder {
     #7e68ff 100%
   );
   padding-top: 0;
-  padding-bottom: 2px;
+  padding-bottom: 3px;
 }
 
 .form__section--submit:active {
@@ -642,8 +643,8 @@ textarea.form__field__input--txt::placeholder {
     #634dbb 50%,
     #38279c 100%
   );
-  padding-top: 2px;
-  padding-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 1px;
 }
 
 .form__section--shadow {
